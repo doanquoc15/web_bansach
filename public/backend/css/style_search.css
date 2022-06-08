@@ -1,0 +1,42 @@
+/* search */
+
+.search {
+	position: relative;
+	height: 50px;
+  }
+  
+  .search .input_search {
+	background-color: #fff;
+	border: 0;
+	font-size: 18px;
+	padding: 15px;
+	height: 50px;
+	width: 50px;
+	transition: width 0.3s ease;
+  }
+  
+  .btn_search {
+	background-color: #fff;
+	border: 0;
+	cursor: pointer;
+	font-size: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 50px;
+	transition: transform 0.3s ease;
+  }
+  
+  .btn_search:focus,
+  .input_search:focus {
+	outline: none;
+  }
+  
+  .search.active .input {
+	width: 200px;
+  }
+  
+  .search.active .btn_search {
+	transform: translateX(198px);
+  }
